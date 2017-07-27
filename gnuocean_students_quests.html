@@ -1,0 +1,115 @@
+<html>
+<head>
+  <title>GNU OCEAN</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--
+    EXTERNE PLUGINS
+  -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link href="css/metisMenu.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/sb-admin-2.min.css" />
+  <link href="css/morris.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/pouchdb-6.2.0.min.js"></script>
+  <script type="text/javascript" src="js/pouchdb.authentication.min.js"></script>
+    <script type="text/javascript" src="js/pouchdb.upsert.min.js"></script>
+  <script type="text/javascript" src="js/metisMenu.min.js"></script>
+  <script type="text/javascript" src="js/raphael.min.js"></script>
+
+  <script type="text/javascript" src="js/sb-admin-2.min.js"></script>
+ <link href="css/datatables.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="js/datatables.js"></script>
+  <!--
+    Eigener Code
+  -->
+  <script type="text/javascript" src="js/main_students.js"></script>
+  <script type="text/javascript" src="js/quests_students.js"></script>
+</head>
+<body onload="loadQuests()">
+  <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">GNU OCEAN</a>
+            </div>
+            <!-- /.navbar-header -->
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="gnuocean_students_single.html"><i class="fa fa-user fa-fw"></i> Einzelansicht</a>
+                    </li>
+                    <li>
+                        <a href="gnuocean_students_compare.html"><i class="fa fa-compress fa-fw"></i> Charaktervergleich</a>
+                    </li>
+                    <li>
+                        <a href="gnuocean_students.html"><i class="fa fa-dashboard fa-fw"></i> Charakterübersicht</a>
+                    </li>                    
+                    <li>
+                        <a href="gnuocean_students_sudocards.html"><i class="fa fa-credit-card fa-fw"></i> Sudocards</a>
+                    </li>
+                    <li>
+                        <a href="gnuocean_students_medals.html"><i class="fa fa-first-order fa-fw"></i> Orden</a>
+                    </li>
+                    <li>
+                        <a href="gnuocean_students_quests.html"><i class="fa fa-tasks fa-fw"></i> Quests</a>
+                    </li>
+                    <li>
+                        <a href="gnuocean_students_worldmap.html"><i class="fa fa-globe fa-fw"></i> Weltkarte</a>
+                    </li>
+                    
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="page-header">Quests&nbsp;<span class="badge" id="quest_count"></span></h2>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <div id="questcontent"></div>
+        </div><!-- /page-wrapper -->
+      </div> <!-- /wrappter -->
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -->
